@@ -55,3 +55,47 @@ Las vistas del sistema se encuentran en las paginas JSP dentro del proyecto.
 
 Conclusion:
 Con este sistema se puede gestionar de forma sencilla las reservas de espacios en un coworking, permitiendo registrar, visualizar y eliminar reservas mediante una aplicacion web basada en Java.
+
+
+Instrucciones de despliegue
+Requisitos previos:
+
+Para ejecutar este proyecto se necesita tener instalado lo siguiente:
+
+- Java JDK 21
+- Apache Tomcat 8.5 o superior
+- NetBeans 19
+- MySQL (base de datos)
+- Maven
+
+Tambien es necesario tener creada la base de datos donde se guardaran las reservas.
+
+Pasos para ejecutar el proyecto:
+
+1. Clonar el repositorio desde GitHub o descargar el proyecto en formato ZIP.
+2. Abrir el proyecto en NetBeans.
+3. Verificar la configuracion de la base de datos en el archivo persistence.xml.
+4. Asegurarse de que el servidor Apache Tomcat este configurado en NetBeans.
+5. Ejecutar el proyecto usando la opcion Run Project.
+6. El servidor iniciara automaticamente y se podra acceder a la aplicacion desde el navegador.
+
+Acceso a la aplicacion:
+
+Una vez que el proyecto esta ejecutandose, la aplicacion se puede abrir desde la siguiente URL:
+
+http://localhost:8080/coworking1/index.jsp
+
+Desde esta pagina el usuario puede:
+
+- Registrar una nueva reserva
+- Ver la lista de reservas registradas
+- Eliminar reservas existentes
+
+Funcionalidad del sistema:
+
+El sistema permite gestionar reservas de espacios en un coworking. Las funcionalidades principales son:
+
+- Registrar reservas: el usuario ingresa su nombre, fecha, espacio y duracion.
+- Validar fechas: el sistema no permite registrar reservas en fechas anteriores al dia actual.
+- Ver reservas: se muestran todas las reservas en una tabla.
+- Eliminar reservas: cada reserva tiene un boton para eliminarla.
